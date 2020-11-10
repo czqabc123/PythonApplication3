@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2936363d-1794-4a19-9291-b56e09885851</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>module3.py</StartupFile>
+    <StartupFile>dynamicProgram.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PythonApplication3</Name>
     <RootNamespace>PythonApplication3</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="dynamicProgram.py" />
     <Compile Include="module1.py">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +30,10 @@
     <Compile Include="module3.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="yuanweihua.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module551.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
